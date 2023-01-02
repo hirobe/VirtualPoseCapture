@@ -44,7 +44,7 @@ FinalIKは、商用製品です。そのため、このリポジトリにはFina
 ```
 4. Unity Editorのメニュー `Assets` -> `Reimport All`を選択して読み込み直してください。
 
-### FinakIKのセットアップ
+### FinalIKのセットアップ
 
 FinalIKは事前にUnityAssetStoreで購入済みである必要があります。
 
