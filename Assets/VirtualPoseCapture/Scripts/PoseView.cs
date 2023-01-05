@@ -97,6 +97,12 @@ namespace VirtualPoseCapture
     {
         [SerializeField] private GraphDataHolder graphDataHolder;
         [SerializeField] private GameObject lookAtTraget;
+
+        [SerializeField] private SampleBonesSendBundle _sampleBonesSendBundle;
+        private UnityHumanoidVMDRecorder unityHumanoidVMDRecorder;
+        [SerializeField] private bool _isStartRecording = false;
+        private bool _isRecording = false;        
+        
         private Transform[] _boneTransforms;
 
         private int _blinkingFrameCount = -1;
@@ -196,6 +202,16 @@ namespace VirtualPoseCapture
                     _handFingerValues[i].DefaultRotation = _boneTransforms[i].rotation;
                 }
             }
+
+            
+            _sampleBonesSendBundle.Model = _vrmGameObject;
+
+            // VMDRecorder
+            UnityHumanoidVMDRecorder.ParentObject = gameObject;
+            unityHumanoidVMDRecorder = _vrmGameObject.AddComponent<UnityHumanoidVMDRecorder>();
+            UnityHumanoidVMDRecorder.ParentObject = gameObject;
+            unityHumanoidVMDRecorder.SampleBonesSendBundle = _sampleBonesSendBundle;
+            unityHumanoidVMDRecorder.StartInit();
 
             var overrideController = new AnimatorOverrideController
             {
@@ -359,6 +375,22 @@ namespace VirtualPoseCapture
             headEffector.OnPostHeadEffectorFK = _vrmLookAtHead.LookWorldPosition;
 
             _faceProxyWrapper = new FaceProxyWrapper(_vrmGameObject);
+            
+            if (_isRecording == false && _isStartRecording == true)
+            {
+                // start recording
+                _isRecording = true;
+                unityHumanoidVMDRecorder.StartRecording();
+            } else if ( _isRecording == true && _isStartRecording == false)
+            {
+                // stop recording
+                _isRecording = false;
+            
+                String filePath = Application.persistentDataPath + "/hoge.vmd";
+                Debug.Log(Application.persistentDataPath);
+                unityHumanoidVMDRecorder.StopRecording();
+                unityHumanoidVMDRecorder.SaveVMD("modelName",filePath);
+            }
         }
 
         private void SetupBindings()

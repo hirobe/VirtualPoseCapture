@@ -20,6 +20,8 @@ https://user-images.githubusercontent.com/85206/205860844-c4a0da29-6bbb-4a68-bcf
 - FinalIK: Version 2.2 ([Unity Asset Store](https://assetstore.unity.com/packages/tools/animation/final-ik-14290))
 - UniVRM: 0.107.0
 - VRM model: Vita ([here](https://vroid.pixiv.help/hc/en-us/articles/360014900113-AvatarSample-F))
+- uOSC: v2.1.0 ([here](https://github.com/hecomi/uOSC))
+- UnityVMDRecorder ([here](https://github.com/hobosore/UnityVMDRecorder))
 
 FinalIKは、商用製品です。そのため、このリポジトリにはFinalIKは含まれません。このアプリケーションを動かすには、FinalIKをUnityAssetStoreで購入する必要があります。
 
@@ -75,3 +77,5 @@ iPhoneのように複数のカメラがある場合は、画面下のカメラ�
 - UniVRM ([MIT](https://github.com/vrm-c/UniVRM/blob/master/LICENSE.txt))
 - Vita ([CC0](https://vroid.pixiv.help/hc/en-us/articles/360014900113-AvatarSample-F))
 - FinalIK ([UnityAssetStore](https://assetstore.unity.com/packages/tools/animation/final-ik-14290)) ([UnityAsetStore EULA](https://unity.com/legal/as-terms))
+- uOSC ([MIT](https://github.com/hecomi/uOSC/blob/master/LICENSE.md))
+- UnityVMDRecorder ([MIT](https://github.com/hobosore/UnityVMDRecorder/blob/2019/LICENSE))

@@ -6,6 +6,13 @@
       "source": "local-tarball",
       "dependencies": {}
     },
+    "com.hecomi.uosc": {
+      "version": "https://github.com/hecomi/uOSC.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e9157d7832f9f79c42660b820e5c29d17b880446"
+    },
     "com.neuecc.unirx": {
       "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
       "depth": 0,

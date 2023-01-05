@@ -20,6 +20,8 @@ Each part of the avatar's body is moved in the following ways
 - FinalIK: Version 2.2 ([Unity Asset Store](https://assetstore.unity.com/packages/tools/animation/final-ik-14290))
 - UniVRM: 0.107.0
 - VRM model: Vita ([here](https://vroid.pixiv.help/hc/en-us/articles/360014900113-AvatarSample-F))
+- uOSC: v2.1.0 ([here](https://github.com/hecomi/uOSC))
+- UnityVMDRecorder ([here](https://github.com/hobosore/UnityVMDRecorder))
 
 FinalIK is a commercial product. Therefore, FinalIK is not included in this repository. To run this application, FinalIK must be purchased from the UnityAssetStore.
 
@@ -75,3 +77,5 @@ We would like to express our deepest gratitude to those who have made their wond
 - UniVRM ([MIT](https://github.com/vrm-c/UniVRM/blob/master/LICENSE.txt))
 - Vita ([CC0](https://vroid.pixiv.help/hc/en-us/articles/360014900113-AvatarSample-F))
 - FinalIK ([UnityAssetStore](https://assetstore.unity.com/packages/tools/animation/final-ik-14290)) ([UnityAsetStore EULA](https://unity.com/legal/as-terms))
+- uOSC ([MIT](https://github.com/hecomi/uOSC/blob/master/LICENSE.md))
+- UnityVMDRecorder ([MIT](https://github.com/hobosore/UnityVMDRecorder/blob/2019/LICENSE))

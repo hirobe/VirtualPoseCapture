@@ -1276,6 +1276,8 @@ GameObject:
   - component: {fileID: 1346344352}
   - component: {fileID: 1346344351}
   - component: {fileID: 1346344350}
+  - component: {fileID: 1346344355}
+  - component: {fileID: 1346344354}
   m_Layer: 0
   m_Name: VRM
   m_TagString: Untagged
@@ -1309,6 +1311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graphDataHolder: {fileID: 1346344350}
   lookAtTraget: {fileID: 1628855068}
+  _sampleBonesSendBundle: {fileID: 1346344354}
+  _isStartRecording: 0
 --- !u!114 &1346344352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087a85666418465e8b67bb41f48a2f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrmPath: VRM/Vita.vrm
+  vrmPath: VRM/DrKirin_for_unity.vrm
 --- !u!4 &1346344353
 Transform:
   m_ObjectHideFlags: 0
@@ -1337,6 +1341,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346344354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346344349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b92f063d304dafac691bed781c473a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Model: {fileID: 0}
+  vrmfilepath: 
+  RuntimeLoadGUI: 1
+  IsSendLeftHand: 0
+  IsSendRightHand: 0
+  IsSendBody: 1
+  IsSendFace: 0
+--- !u!114 &1346344355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346344349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36dd9fcae25042bbb815255411ff524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  address: 127.0.0.1
+  port: 33334
+  maxQueueSize: 100
+  dataTransimissionInterval: 0
+  onClientStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onClientStopped:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1375628857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3053,8 +3098,8 @@ RectTransform:
   m_Father: {fileID: 8571076842975818496}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.04187192}
-  m_AnchorMax: {x: 1, y: 0.9458128}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
